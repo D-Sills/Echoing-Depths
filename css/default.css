@@ -44,7 +44,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'garmond', serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -328,6 +328,7 @@ h6, .h6 {
   font-size: 1rem; }
 
 .lead {
+  font-family: 'garmond', serif;
   font-size: 1.2rem;
   font-weight: 500; }
 
@@ -7584,7 +7585,10 @@ body {
   height: 80vh; /* Less than full screen on desktop */
 }
 
-
+.play-button {
+  color: #DFDFDF;
+  background-color: transparent  !important;
+}
 
 
 .bg-hero:before {
