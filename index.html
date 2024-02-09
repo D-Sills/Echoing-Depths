@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Echoing Depths</title>
+    <meta name="description"
+          content="Retro-Inspired Dungeon Crawler Created in Unity."/>
+
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/Lunacid - OST - Book Betrayal by ThorHighHeels.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="muteButton" class="btn-mute"><i class="fa fa-volume-up"></i></button>
+
+    
+    
+<!--header-->
+<section class="bg-hero" id="home">
+    <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto text-center">
+                <img src="img/logo.png" alt="Game Logo" class="hero-logo">
+                <p class="lead py-3">"Uncover the Echoing Depths: Where Ancient Mysteries and Perilous Realms Await."</p>
+                <button class="btn btn-primary d-inline-flex flex-row align-items-center">
+                    Try the Game!
+                    <em class="ml-2" data-feather="arrow-right"></em>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<section class="media-links">
+    <div class="container">
+        <div class="row text-center">
+            <!-- GitHub Link -->
+            <div class="col-lg-4 col-md-4 col-12 py-3">
+                <a href="https://github.com/D-Sills/FYP-Game"  target="_blank" class="btn media-link-btn">
+                    <i class="fa fa-github fa-2x"></i>
+                    <p class="media-link-text d-block mt-2">GitHub</p>
+                </a>
+            </div>
+            <!-- Demo Video Link -->
+            <div class="col-lg-4 col-md-4 col-12 py-3">
+                <a href="URL_TO_DEMO_VIDEO" class="btn media-link-btn" data-toggle="modal" data-target="#videoModal">
+                    <i class="fa fa-play-circle fa-2x"></i>
+                    <p class="media-link-text d-block mt-2">Demo Video</p>
+                </a>
+            </div>
+            <!-- Poster Link -->
+            <div class="col-lg-4 col-md-4 col-12 py-3">
+                <a href="URL_TO_POSTER" class="btn media-link-btn" data-toggle="modal" data-target="#imageModal">
+                    <i class="fa fa-image fa-2x"></i>
+                    <p class="media-link-text d-block mt-2">Poster</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">Video Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Embed Video Here -->
+          <iframe width="100%" height="400" src="YOUR_VIDEO_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Image Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Display Image Here -->
+          <img src="YOUR_IMAGE_URL" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
