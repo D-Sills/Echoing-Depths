@@ -7622,23 +7622,25 @@ body {
   margin: 0 auto; /* Centers the container */
   width: auto; /* Allows the container to adjust based on the content and padding */
   max-width: 96%; /* Provides some space on the sides on larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .media-links {
-      padding: 20px 10px; /* Reduces padding on smaller screens */
-      max-width: 98%; /* Allows more space usage on small screens */
-      height: auto;
-  }
+.media-links-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
 }
 
-
-@media (max-width: 768px) {
-  .media-links {
-      width: 95%; /* Allows for a slightly wider container on smaller screens */
-  }
+.media-link-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px; /* Adjust horizontal padding if needed */
+  max-width: 33.33%; /* Ensure items are equally spaced */
 }
-
 .media-links:before{
   text-align: center; /* Center the content */
 }
@@ -8013,3 +8015,55 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .switcher-wrap {
     display: none; } }
+
+/* Ensure the whole page uses flexbox */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex-grow to push footer to the bottom */
+.bg-hero {
+  flex-grow: 1;
+}
+
+.media-links {
+  border-top: 2px solid #C0AD57; /* Top border, change color as needed */
+  border-bottom: 2px solid #C0AD57; /* Bottom border, change color as needed */
+  padding: 40px 0; /* Adjusts vertical padding inside the container */
+  margin: 0; /* Centers the container */
+  width: auto; /* Allows the container to adjust based on the content and padding */
+  max-width: 100%; /* Provides some space on the sides on larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-links-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.media-link-item {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px; /* Adjust horizontal padding if needed */
+  max-width: 33.33%; /* Ensure items are equally spaced */
+}
+
+/* Ensure footer sticks to the bottom on small screens */
+@media (max-width: 768px) {
+  .media-links {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #000; /* Adjust as needed */
+  }
+}
